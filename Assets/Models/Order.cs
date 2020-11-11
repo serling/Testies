@@ -26,5 +26,10 @@ namespace Testies.Models {
         {
             OrderSet.Remove(this);
         }
+
+        private void Update() 
+        {
+            
+        }
     }
 }

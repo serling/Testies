@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3962853821769321452}
   - component: {fileID: 3962853821769321453}
-  - component: {fileID: 771636603156020691}
   m_Layer: 0
   m_Name: OrderManager
   m_TagString: Untagged
@@ -44,33 +43,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7d450606463b0b43b96b7eb3b7c26d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Orders: {fileID: 11400000, guid: f0078a5807609f4489e2453a9ff22f50, type: 2}
-  OrderPrefab: {fileID: 1943600891128509495, guid: d32e46fea095e334a9472a0362afad28,
-    type: 3}
---- !u!114 &771636603156020691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3962853821769321362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89189e1251346fd448167f9fa439af0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 1e276e826a15bfa4e985070ce9bce022, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3962853821769321453}
-        m_MethodName: AddOrder
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2

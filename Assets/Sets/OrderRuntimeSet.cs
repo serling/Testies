@@ -7,15 +7,5 @@ using Testies.Models;
 namespace Testies.Sets 
 {
     [CreateAssetMenu]
-    public class OrderRuntimeSet : RuntimeSet<Order> {
-
-        void OnEnable()
-        {
-        }
-
-        void OnDisable()
-        {
-        }
-
-    }
+    public class OrderRuntimeSet : RuntimeSet<Order> {}
 }

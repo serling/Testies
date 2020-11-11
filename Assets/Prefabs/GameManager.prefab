@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b4dec097ccf55a47b9e1e1f5c7391fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onMouseClick: {fileID: 11400000, guid: fbfd550a1261b614da16908e561f891b, type: 2}
 --- !u!114 &8148319481142628593
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ using Testies.Models;
 public class OrderSpawner : MonoBehaviour
 {
     public OrderRuntimeSet Orders;
-    public GameObject OrderPrefab; 
+    public GameObject OrderPrefab;
 
     private Vector3 getRandomPosition()
     {
@@ -24,11 +24,14 @@ public class OrderSpawner : MonoBehaviour
         InstantiateOrder(); 
     }
 
-    public void RemoveOrder() // params
+    public void RemoveOrder(GameObject gameObject)
+    {
+        gameObject.SetActive(false); // alternatively: Destroy(gameObject);
+    }
+
+    public void RemoveRandomOrder()
     {
         int length = Orders.Count();
-
-        if (length == 0) Debug.Log("Nothing to remove");
 
         int index = Random.Range(0, length);
 
