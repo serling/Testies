@@ -5,9 +5,10 @@ using Testies.Sets;
 
 namespace Testies.Models {
 
-public class Order : ScriptableObject
+    public class Order : MonoBehaviour
     {
-        // public OrderRuntimeSet OrderSet;
+        public OrderRuntimeSet OrderSet;
+        
         public string Title;
 
         public Order() {}
@@ -16,14 +17,14 @@ public class Order : ScriptableObject
             Title = title;
         }
 
-        // private void OnEnable()
-        // {
-        //     OrderSet.Add(this);
-        // }
+        private void OnEnable()
+        {
+            OrderSet.Add(this);
+        }
 
-        // private void OnDisable()
-        // {
-        //     OrderSet.Remove(this);
-        // }
+        private void OnDisable()
+        {
+            OrderSet.Remove(this);
+        }
     }
 }
