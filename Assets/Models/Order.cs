@@ -9,7 +9,7 @@ namespace Testies.Models {
     {
         public OrderRuntimeSet OrderSet;
         
-        public string Title;
+        public string Title = "Hamburger";
 
         public Order() {}
 

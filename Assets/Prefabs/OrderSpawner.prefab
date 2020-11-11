@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8848901529324839998}
   - component: {fileID: 8848901529324839999}
   - component: {fileID: 8848901529324839996}
-  - component: {fileID: 8848901529324839997}
+  - component: {fileID: 191749331}
   m_Layer: 0
   m_Name: OrderSpawner
   m_TagString: Untagged
@@ -75,7 +75,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &8848901529324839997
+--- !u!114 &191749331
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -84,7 +84,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8848901529324839994}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89189e1251346fd448167f9fa439af0f, type: 3}
+  m_Script: {fileID: 11500000, guid: fa7c4559d5dfd6840bf55618659b52f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Event: {fileID: 11400000, guid: 12874993d13cca34399392feab20ada3, type: 2}

@@ -19,20 +19,20 @@ public class OrderSpawner : MonoBehaviour
         Instantiate(OrderPrefab, getRandomPosition(), Quaternion.identity);
     }
 
-    private void DestroyOrder() 
-    {
-        // Destroy();
-    }
-
     public void AddOrder()
     {
-        InstantiateOrder(); // params
+        InstantiateOrder(); 
     }
 
-    public void RemoveOrder() 
+    public void RemoveOrder() // params
     {
-        Debug.Log("Removing Order soon...");
-        // DestroyOrder();
+        int length = Orders.Count();
+
+        if (length == 0) Debug.Log("Nothing to remove");
+
+        int index = Random.Range(0, length);
+
+        Orders.Items[index].gameObject.SetActive(false);
     }
 
     void Start()
@@ -42,7 +42,6 @@ public class OrderSpawner : MonoBehaviour
         for (int i = 0; i < orders; i++) 
         {
             InstantiateOrder();
-
         }
     }
 
