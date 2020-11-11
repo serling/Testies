@@ -5,7 +5,6 @@ using UnityEngine;
 public class AddOrder : MonoBehaviour
 {
     
-    
     public void Add()
     {
         Debug.Log("Add Order");
@@ -17,7 +16,6 @@ public class AddOrder : MonoBehaviour
     }
 
 
-    // Update is called once per frame
     void Update()
     {
         

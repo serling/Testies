@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Testies.Scripts;
+using Testies.Models;
 
 namespace Testies.Sets 
 {

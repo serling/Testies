@@ -8,11 +8,9 @@ using Testies.Sets;
 public class GameManager : MonoBehaviour
 {
 
-    public OrderRuntimeSet Orders;
 
     void Start()
     {
-        Debug.Log(Orders.Count());
     }
 
     void Update()

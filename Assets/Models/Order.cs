@@ -3,18 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using Testies.Sets;
 
-public class Order : MonoBehaviour
-{
-    public OrderRuntimeSet OrderSet;
-    public string title;
+namespace Testies.Models {
 
-    private void OnEnable()
+public class Order : ScriptableObject
     {
-        OrderSet.Add(this);
-    }
+        // public OrderRuntimeSet OrderSet;
+        public string Title;
 
-    private void OnDisable()
-    {
-        OrderSet.Remove(this);
+        public Order() {}
+
+        public Order(string title) {
+            Title = title;
+        }
+
+        // private void OnEnable()
+        // {
+        //     OrderSet.Add(this);
+        // }
+
+        // private void OnDisable()
+        // {
+        //     OrderSet.Remove(this);
+        // }
     }
 }
