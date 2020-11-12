@@ -10,13 +10,9 @@ namespace Testies.Events
     {
         private readonly List<OrderEventListener> eventListeners = new List<OrderEventListener>();
 
-        public void Raise() //Order order
+        public void Raise(Order order)
         {
-            // var randomIndex = Random.Range(0, eventListeners.Count);
-
-            // eventListeners[randomIndex].OnEventRaised();
-
-            for (int i = eventListeners.Count - 1; i >= 0; i--) eventListeners[i].OnEventRaised();
+            for (int i = eventListeners.Count - 1; i >= 0; i--) eventListeners[i].OnEventRaised(order);
         }
 
         public void RegisterListener(OrderEventListener listener) {

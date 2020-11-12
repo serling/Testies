@@ -121,6 +121,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &191749333 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8848901529324839999, guid: ac8b8e67ac0110e499b43741585800f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1303176722}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 921caa8bab6a5964fb60ba8367653d3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &296623073
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,6 +703,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178587645734649783, guid: 0f6155e9106482644a606fd3f4386900,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 191749333}
+    - target: {fileID: 6178587645734649783, guid: 0f6155e9106482644a606fd3f4386900,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RemoveRandomOrder
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f6155e9106482644a606fd3f4386900, type: 3}

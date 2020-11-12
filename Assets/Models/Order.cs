@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Testies.Sets;
 using Testies.Events;
+using Testies.Steps;
 
 namespace Testies.Models {
 
@@ -13,6 +14,8 @@ namespace Testies.Models {
         public OrderRuntimeSet CompletedOrders;
 
         public OrderEvent OnOrderCompleted;
+
+        public List<Step> Steps;
         
         public string Title = "Hamburger";
 
@@ -33,7 +36,8 @@ namespace Testies.Models {
 
             CompletedOrders.Add(this);
 
-            OnOrderCompleted.Raise();
+            OnOrderCompleted.Raise(this);
+
         }
 
     }

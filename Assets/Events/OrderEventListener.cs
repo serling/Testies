@@ -9,7 +9,7 @@ namespace Testies.Events
     {
          public OrderEvent Event;
 
-        public UnityEvent Response;
+        public OrderUnityEvent Response;
 
         private void OnEnable()
         {
@@ -21,9 +21,9 @@ namespace Testies.Events
             Event.UnregisterListener(this);
         }
 
-        public void OnEventRaised() //Order order
+        public void OnEventRaised(Order order) 
         {
-            Response.Invoke(); //order
+            Response.Invoke(order);
         }
         
     }

@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 921caa8bab6a5964fb60ba8367653d3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Orders: {fileID: 11400000, guid: f0078a5807609f4489e2453a9ff22f50, type: 2}
+  ActiveOrders: {fileID: 11400000, guid: f0078a5807609f4489e2453a9ff22f50, type: 2}
   OrderPrefab: {fileID: 1943600891128509495, guid: d32e46fea095e334a9472a0362afad28,
     type: 3}
 --- !u!114 &8848901529324839996
@@ -91,18 +91,7 @@ MonoBehaviour:
   Event: {fileID: 11400000, guid: 40b8c378845d9034e9c854d4aba4e49c, type: 2}
   Response:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8848901529324839999}
-        m_MethodName: RemoveRandomOrder
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &191749335
 MonoBehaviour:
   m_ObjectHideFlags: 0

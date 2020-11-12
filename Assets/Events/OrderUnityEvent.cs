@@ -6,7 +6,6 @@ using Testies.Models;
 
 namespace Testies.Events
 {
-    public class OrderUnityEvent : UnityEvent
-    {
-    }
+    [System.Serializable]
+    public class OrderUnityEvent : UnityEvent<Order> {}
 }

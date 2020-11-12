@@ -51,9 +51,4 @@ public class OrderSpawner : MonoBehaviour
             InstantiateOrder("from start");
         }
     }
-
-    void Update()
-    {
-        
-    }
 }

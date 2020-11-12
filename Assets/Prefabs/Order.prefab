@@ -109,4 +109,6 @@ MonoBehaviour:
   ActiveOrders: {fileID: 11400000, guid: f0078a5807609f4489e2453a9ff22f50, type: 2}
   CompletedOrders: {fileID: 11400000, guid: bed9c1d93bbe75d44903d98bdefdb401, type: 2}
   OnOrderCompleted: {fileID: 11400000, guid: fdcfb2fa451e275448d5a488a6a24fcd, type: 2}
+  Steps:
+  - {fileID: 11400000, guid: 369f54dd3d2185b4fb41ecdb2599069c, type: 2}
   Title: Hamburger
