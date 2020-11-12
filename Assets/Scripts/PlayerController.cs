@@ -12,13 +12,17 @@ namespace Testies.Scripts
 
         public UnityEvent DeathEvent;
 
+        private bool IsDead = false;
+
         void Start()
         {
-            
+            if (Health.Value == 0) DeathEvent.Invoke();
         }
 
         void Update()
         {
+            if (IsDead) return;
+
             if (Health.Value == 0) DeathEvent.Invoke();
         }
     }

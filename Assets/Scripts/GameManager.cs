@@ -9,14 +9,9 @@ using Testies.Models;
 public class GameManager : MonoBehaviour
 {
 
-    private void Start()
+    public void Execute()
     {
-    }
-
-    private void Update()
-    {
-        
-        
+        Debug.Log("Killed player.");
     }
 
 

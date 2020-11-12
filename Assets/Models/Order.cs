@@ -2,12 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Testies.Sets;
+using Testies.Events;
 
 namespace Testies.Models {
 
     public class Order : MonoBehaviour
     {
-        public OrderRuntimeSet OrderSet;
+        public OrderRuntimeSet ActiveOrders;
+
+        public OrderRuntimeSet CompletedOrders;
+
+        public OrderEvent OnOrderCompleted;
         
         public string Title = "Hamburger";
 
@@ -19,17 +24,17 @@ namespace Testies.Models {
 
         private void OnEnable()
         {
-            OrderSet.Add(this);
+            ActiveOrders.Add(this);
         }
 
         private void OnDisable()
         {
-            OrderSet.Remove(this);
+            ActiveOrders.Remove(this);
+
+            CompletedOrders.Add(this);
+
+            OnOrderCompleted.Raise();
         }
 
-        private void Update() 
-        {
-            
-        }
     }
 }
