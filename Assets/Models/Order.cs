@@ -9,7 +9,7 @@ namespace Testies.Models {
 
     public class Order : MonoBehaviour
     {
-        public OrderRuntimeSet ActiveOrders;
+        public OrderRuntimeSet PendingOrders;
 
         public OrderRuntimeSet CompletedOrders;
 
@@ -26,7 +26,7 @@ namespace Testies.Models {
         public void SetMeal(Meal meal)
         {
             Meal = meal;
-            
+
             label = Meal.Name;
         }
         
@@ -34,12 +34,12 @@ namespace Testies.Models {
         {
             label = Meal.Name;
 
-            ActiveOrders.Add(this);
+            PendingOrders.Add(this);
         }
 
         private void OnDisable()
         {
-            ActiveOrders.Remove(this);
+            PendingOrders.Remove(this);
 
             CompletedOrders.Add(this);
 
