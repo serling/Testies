@@ -16,6 +16,10 @@ public abstract class RuntimeSet<T> : ScriptableObject
         if (Items.Contains(type)) Items.Remove(type);
     }
 
+    public T getRandom() {
+        return Items[Random.Range(0, Items.Count)];
+    }
+
     public int Count ()
     {
         return Items.Count;

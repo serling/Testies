@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0686a5ad847b450468e35cb1b10a1ee7, type: 3}
-  m_Name: HotDog
+  m_Script: {fileID: 11500000, guid: eeae3657303fbeb46b564eaed59f9e95, type: 3}
+  m_Name: Carrot
   m_EditorClassIdentifier: 
-  Name: Hot Dog
+  Name: Carrot
+  Steps: []

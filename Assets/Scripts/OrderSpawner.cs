@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using Testies.Sets;
 using Testies.Models;
-using Testies.OrderTypes;
 
 public class OrderSpawner : MonoBehaviour
 {
     public OrderRuntimeSet ActiveOrders;
+    public MealRuntimeSet AvailableMeals;
     public GameObject OrderPrefab;
 
     private Vector3 getRandomPosition()
@@ -15,17 +15,19 @@ public class OrderSpawner : MonoBehaviour
         return new Vector3(Random.Range(-10f,10f), Random.Range(-10f,10f), 0);
     }
 
-    private void InstantiateOrder(string text) 
+    private void InstantiateOrder() 
     {
-        GameObject orderInstance = Instantiate(OrderPrefab, getRandomPosition(), Quaternion.identity);
+        GameObject orderInstance = OrderPrefab;
 
-        // orderInstance.GetComponent<Order>().SetTitle("Blargh");
-        
+        orderInstance.GetComponent<Order>().SetMeal(AvailableMeals.getRandom());
+
+        Instantiate(orderInstance, getRandomPosition(), Quaternion.identity);
+
     }
 
     public void AddOrder()
     {
-        InstantiateOrder("from add"); 
+        InstantiateOrder(); 
     }
 
     public void RemoveOrder(GameObject gameObject)
@@ -48,7 +50,7 @@ public class OrderSpawner : MonoBehaviour
 
         for (int i = 0; i < orders; i++) 
         {
-            InstantiateOrder("from start");
+            InstantiateOrder();
         }
     }
 }

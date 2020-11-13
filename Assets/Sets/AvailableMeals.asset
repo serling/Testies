@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb3f225c405858e45bb60953b03e3b60, type: 3}
+  m_Name: AvailableMeals
+  m_EditorClassIdentifier: 
+  Items:
+  - {fileID: 11400000, guid: 6d24a3d9d1f9947489eff4dfd579cfb0, type: 2}
+  - {fileID: 11400000, guid: aa21553eb6e04704dbd69a3e963ddc7c, type: 2}
+  - {fileID: 11400000, guid: 65d951ca63bda1542a90e3f676ce4434, type: 2}

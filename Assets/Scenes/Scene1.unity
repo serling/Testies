@@ -232,21 +232,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -2139356186938908371, guid: 0399df97c28f5b4488d6b2071206731f,
-        type: 3}
-      propertyPath: DeathEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -2139356186938908371, guid: 0399df97c28f5b4488d6b2071206731f,
-        type: 3}
-      propertyPath: DeathEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -2139356186938908371, guid: 0399df97c28f5b4488d6b2071206731f,
-        type: 3}
-      propertyPath: DeathEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 1030480247594771874, guid: 0399df97c28f5b4488d6b2071206731f,
         type: 3}
       propertyPath: m_Name
@@ -378,63 +363,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8848901529324839999, guid: ac8b8e67ac0110e499b43741585800f4,
         type: 3}
-      propertyPath: ActiveOrders
+      propertyPath: AvailableMeals.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8848901529324839999, guid: ac8b8e67ac0110e499b43741585800f4,
+        type: 3}
+      propertyPath: AvailableMeals.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: f0078a5807609f4489e2453a9ff22f50,
+      objectReference: {fileID: 11400000, guid: 65d951ca63bda1542a90e3f676ce4434,
         type: 2}
     - target: {fileID: 8848901529324839999, guid: ac8b8e67ac0110e499b43741585800f4,
         type: 3}
-      propertyPath: CompletedOrders
+      propertyPath: AvailableMeals.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: bed9c1d93bbe75d44903d98bdefdb401,
+      objectReference: {fileID: 11400000, guid: aa21553eb6e04704dbd69a3e963ddc7c,
+        type: 2}
+    - target: {fileID: 8848901529324839999, guid: ac8b8e67ac0110e499b43741585800f4,
+        type: 3}
+      propertyPath: AvailableMeals.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 6d24a3d9d1f9947489eff4dfd579cfb0,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac8b8e67ac0110e499b43741585800f4, type: 3}
---- !u!1 &1438717708 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8148319481142628596, guid: 92f7c156aeb3be94ba7caaa10d188e54,
-    type: 3}
-  m_PrefabInstance: {fileID: 8148319479652014239}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1438717710 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8148319481142628595, guid: 92f7c156aeb3be94ba7caaa10d188e54,
-    type: 3}
-  m_PrefabInstance: {fileID: 8148319479652014239}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1438717708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b4dec097ccf55a47b9e1e1f5c7391fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1438717713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1438717708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89189e1251346fd448167f9fa439af0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 61efa8cd168df8440a920d0ffd7276b5, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1438717710}
-        m_MethodName: Execute
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1874262344
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,11 +660,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 191749333}
-    - target: {fileID: 6178587645734649783, guid: 0f6155e9106482644a606fd3f4386900,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RemoveRandomOrder
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f6155e9106482644a606fd3f4386900, type: 3}
 --- !u!1001 &3962853822257105837
@@ -783,12 +729,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3962853821769321453, guid: 8dbfc9831dd964b4e8bff20e1a8a347f,
-        type: 3}
-      propertyPath: CompletedOrders
-      value: 
-      objectReference: {fileID: 11400000, guid: bed9c1d93bbe75d44903d98bdefdb401,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dbfc9831dd964b4e8bff20e1a8a347f, type: 3}
 --- !u!1001 &8148319479652014239
@@ -798,11 +738,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8148319481142628593, guid: 92f7c156aeb3be94ba7caaa10d188e54,
-        type: 3}
-      propertyPath: Response.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 8148319481142628594, guid: 92f7c156aeb3be94ba7caaa10d188e54,
         type: 3}
       propertyPath: m_LocalPosition.x

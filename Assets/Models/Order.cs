@@ -15,18 +15,25 @@ namespace Testies.Models {
 
         public OrderEvent OnOrderCompleted;
 
-        public List<Step> Steps;
-        
-        public string Title = "Hamburger";
+        public string label;
 
-        public Order() {}
+        // public OrderEvent OnOrderStart;
 
-        public Order(string title) {
-            Title = title;
+        // on evnet: use a new canvas, populate meal + logic
+
+        public Meal Meal;
+
+        public void SetMeal(Meal meal)
+        {
+            Meal = meal;
+            
+            label = Meal.Name;
         }
-
+        
         private void OnEnable()
         {
+            label = Meal.Name;
+
             ActiveOrders.Add(this);
         }
 
