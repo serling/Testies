@@ -46,10 +46,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 921caa8bab6a5964fb60ba8367653d3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ActiveOrders: {fileID: 11400000, guid: f0078a5807609f4489e2453a9ff22f50, type: 2}
+  PendingOrders: {fileID: 11400000, guid: f0078a5807609f4489e2453a9ff22f50, type: 2}
+  AvailableMeals: {fileID: 11400000, guid: 2747d48fb29283c43831dbec052d5b1d, type: 2}
   OrderPrefab: {fileID: 1943600891128509495, guid: d32e46fea095e334a9472a0362afad28,
     type: 3}
-  defaultMeal: {fileID: 11400000, guid: 65d951ca63bda1542a90e3f676ce4434, type: 2}
 --- !u!114 &8848901529324839996
 MonoBehaviour:
   m_ObjectHideFlags: 0

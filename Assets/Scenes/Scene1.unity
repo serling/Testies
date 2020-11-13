@@ -384,6 +384,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 6d24a3d9d1f9947489eff4dfd579cfb0,
         type: 2}
+    - target: {fileID: 8848901529324839999, guid: ac8b8e67ac0110e499b43741585800f4,
+        type: 3}
+      propertyPath: AvailableMeals
+      value: 
+      objectReference: {fileID: 11400000, guid: 2747d48fb29283c43831dbec052d5b1d,
+        type: 2}
+    - target: {fileID: 8848901529324839999, guid: ac8b8e67ac0110e499b43741585800f4,
+        type: 3}
+      propertyPath: PendingOrders
+      value: 
+      objectReference: {fileID: 11400000, guid: f0078a5807609f4489e2453a9ff22f50,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac8b8e67ac0110e499b43741585800f4, type: 3}
 --- !u!1 &1874262344
@@ -545,6 +557,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1013592886, guid: 0f6155e9106482644a606fd3f4386900, type: 3}
+      propertyPath: m_Text
+      value: 'Pending Orders:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970420260, guid: 0f6155e9106482644a606fd3f4386900, type: 3}
+      propertyPath: m_Name
+      value: PendingOrders
+      objectReference: {fileID: 0}
     - target: {fileID: 50618235534528782, guid: 0f6155e9106482644a606fd3f4386900,
         type: 3}
       propertyPath: m_Name

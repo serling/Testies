@@ -285,7 +285,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Active Orders:'
+  m_Text: 'Pending Orders:'
 --- !u!1 &1351959726
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,7 +375,7 @@ GameObject:
   - component: {fileID: 1970420261}
   - component: {fileID: 1970420262}
   m_Layer: 5
-  m_Name: ActiveOrders
+  m_Name: PendingOrders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

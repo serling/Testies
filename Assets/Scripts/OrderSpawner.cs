@@ -6,7 +6,7 @@ using Testies.Models;
 
 public class OrderSpawner : MonoBehaviour
 {
-    public OrderRuntimeSet ActiveOrders;
+    public OrderRuntimeSet PendingOrders;
     public MealRuntimeSet AvailableMeals;
     public GameObject OrderPrefab;
 
@@ -37,16 +37,16 @@ public class OrderSpawner : MonoBehaviour
 
     public void RemoveRandomOrder()
     {
-        int length = ActiveOrders.Count();
+        int length = PendingOrders.Count();
 
         int index = Random.Range(0, length);
 
-        ActiveOrders.Items[index].gameObject.SetActive(false);
+        PendingOrders.Items[index].gameObject.SetActive(false);
     }
 
     void Start()
     {
-        var orders = ActiveOrders.Count();
+        var orders = PendingOrders.Count();
 
         for (int i = 0; i < orders; i++) 
         {
