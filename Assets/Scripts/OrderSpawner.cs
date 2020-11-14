@@ -19,10 +19,9 @@ public class OrderSpawner : MonoBehaviour
     {
         GameObject orderInstance = OrderPrefab;
 
-        orderInstance.GetComponent<Order>().SetMeal(AvailableMeals.getRandom());
+        orderInstance.GetComponent<Order>().SetMeal(AvailableMeals.getRandom()); // Technicality: sets meal on prefab, not instance. Then clones. OK?
 
         Instantiate(orderInstance, getRandomPosition(), Quaternion.identity);
-
     }
 
     public void AddOrder()
