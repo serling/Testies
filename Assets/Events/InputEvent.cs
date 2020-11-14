@@ -2,13 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Testies.Events;
-using UnityEngine.Events;
-using Testies.Sets;
 using Testies.Models;
 
 namespace Testies.Events
 {
-    [CreateAssetMenu]
+    [CreateAssetMenu(fileName = "New InputEvent", menuName = "Events/Input Event (gameObject)")]
     public class InputEvent : ScriptableObject
     {
         private readonly List<InputEventListener> eventListeners = new List<InputEventListener>();

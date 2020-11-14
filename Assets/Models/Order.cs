@@ -15,6 +15,8 @@ namespace Testies.Models {
 
         public OrderEvent OnOrderCompleted;
 
+        public OrderEvent onOrderClick;
+
         public string label;
 
         // public OrderEvent OnOrderStart;
@@ -28,6 +30,12 @@ namespace Testies.Models {
             Meal = meal;
 
             label = Meal.Name;
+        }
+
+        private void OnMouseUp() {
+            this.gameObject.SetActive(false); //this.enabled = false sets component to disabled
+            
+            onOrderClick.Raise(this); //TODO:
         }
         
         private void OnEnable()
@@ -44,7 +52,6 @@ namespace Testies.Models {
             CompletedOrders.Add(this);
 
             OnOrderCompleted.Raise(this);
-
         }
 
     }

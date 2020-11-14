@@ -5,7 +5,7 @@ using Testies.Models;
 
 namespace Testies.Events
 {
-    [CreateAssetMenu]
+    [CreateAssetMenu(fileName = "New OrderEvent", menuName = "Events/Order Event")]
     public class OrderEvent: ScriptableObject 
     {
         private readonly List<OrderEventListener> eventListeners = new List<OrderEventListener>();

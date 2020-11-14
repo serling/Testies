@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Testies.Events
 {
-    [CreateAssetMenu]
+    [CreateAssetMenu(fileName = "New GameEvent", menuName = "Events/Game Event")]
     public class GameEvent : ScriptableObject
     {
         private readonly List<GameEventListener> eventListeners = new List<GameEventListener>();

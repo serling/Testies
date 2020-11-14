@@ -5,7 +5,7 @@ using Testies.Actions;
 
 namespace Testies.Steps {
     
-    [CreateAssetMenu(fileName = "Step", menuName = "Step", order = 0)]
+    [CreateAssetMenu(fileName = "New Step", menuName = "Models/Step")]
     public class Step : ScriptableObject {   
 
         public List<Action> Actions;

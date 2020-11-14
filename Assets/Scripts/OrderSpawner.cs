@@ -29,9 +29,15 @@ public class OrderSpawner : MonoBehaviour
         InstantiateOrder(); 
     }
 
+    [SerializeField]
+    public void PrintOrder(Order order) 
+    {
+        Debug.Log(order);
+    }
+
     public void RemoveOrder(GameObject gameObject)
     {
-        gameObject.SetActive(false); // alternatively: Destroy(gameObject);
+        // gameObject.SetActive(false); // alternatively: Destroy(gameObject);
     }
 
     public void RemoveRandomOrder()

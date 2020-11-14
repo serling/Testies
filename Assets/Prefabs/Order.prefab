@@ -114,5 +114,6 @@ MonoBehaviour:
   PendingOrders: {fileID: 11400000, guid: f0078a5807609f4489e2453a9ff22f50, type: 2}
   CompletedOrders: {fileID: 11400000, guid: bed9c1d93bbe75d44903d98bdefdb401, type: 2}
   OnOrderCompleted: {fileID: 11400000, guid: fdcfb2fa451e275448d5a488a6a24fcd, type: 2}
-  label: Hamburger
-  Meal: {fileID: 11400000, guid: 65d951ca63bda1542a90e3f676ce4434, type: 2}
+  onOrderClick: {fileID: 11400000, guid: 81fbfd2e264aec24d9af815482951b30, type: 2}
+  label: Carrot
+  Meal: {fileID: 11400000, guid: 6d24a3d9d1f9947489eff4dfd579cfb0, type: 2}

@@ -6,6 +6,7 @@ using Testies.Models;
 
 namespace Testies.Sets 
 {
-    [CreateAssetMenu]
+            [CreateAssetMenu(fileName = "New Order Set", menuName = "Runtime Sets/Orders")]
+
     public class OrderRuntimeSet : RuntimeSet<Order> {}
 }
