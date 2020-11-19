@@ -24,14 +24,12 @@ namespace Testies.Scripts {
             order.gameObject.SetActive(false);
         }
 
-        private void Start() {
+        private void OnEnable()
+        {
             order = this.gameObject.AddComponent<Order>();
 
             order.SetMeal(AvailableMeals.getRandom());
-        }
 
-        private void OnEnable()
-        {
             PendingOrders.Add(order);
         }
 
