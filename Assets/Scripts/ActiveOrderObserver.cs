@@ -9,16 +9,20 @@ public class ActiveOrderObserver : MonoBehaviour
 {
     public Text Text;
 
+    private const string noneText = "None";
+
     public void UpdateText(Order order)
     {
         Text.text = order.Label;
     }
 
-    private void OnEnable()
+    public void ResetText()
     {
-         Text.text = "None";
+        Text.text = noneText;
     }
 
-
-
+    private void OnEnable()
+    {
+         ResetText();
+    }
 }
