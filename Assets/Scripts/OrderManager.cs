@@ -12,21 +12,25 @@ namespace Testies.Scripts
 
         public void LogOrder(Order order)
         {
-            Debug.Log("Order label: " + order.Label);
+            Debug.Log("Logging order: " + order.Label);
         }
 
         public void CompleteOrder(Order order)
         {
-            Debug.Log("Order completed: " + order.Label);
+            Debug.Log("Completing order: " + order.Label);
             
-            // order.gameObject.SetActive(false);
+        }
+
+        public void ActivateOrder(Order order)
+        {
+            Debug.Log("handling order: " + order.Label);
+            
         }
 
         public void RemoveOrder(Order order)
         {
-            Debug.Log("just removing" + order.Label);
+            Debug.Log("Removing order: " + order.Label);
 
-            // order.gameObject.SetActive(false);
         }
 
         public void RemoveRandomOrder()

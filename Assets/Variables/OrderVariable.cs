@@ -6,16 +6,20 @@ namespace Testies.Variables
     [CreateAssetMenu(menuName = "Variables/Order")]
     public class OrderVariable : ScriptableObject
     {   
-        public Order Value;
+        public Order Order;
 
-         public void SetValue(Order value)
-        {
-            Value = value;
+        public void ResetOrder() {
+            Order = null;
         }
 
-        public void SetValue(OrderVariable value)
+        public void SetOrder(Order order)
         {
-            Value = value.Value;
+            Order = order;
+        }
+
+        public void SetOrder(OrderVariable order)
+        {
+            Order = order.Order;
         }
     }
 

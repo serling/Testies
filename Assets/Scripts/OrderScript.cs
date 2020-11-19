@@ -5,6 +5,7 @@ using Testies.Sets;
 using Testies.Events;
 using Testies.Steps;
 using Testies.Models;
+using Testies.Variables;
 
 namespace Testies.Scripts {
 
@@ -13,15 +14,38 @@ namespace Testies.Scripts {
         public MealRuntimeSet AvailableMeals;
         public OrderRuntimeSet PendingOrders;
 
+        public OrderVariable ActiveOrder;
         public OrderRuntimeSet CompletedOrders;
 
+        public OrderEvent OnActivateOrder;
         public OrderEvent OnOrderCompleted;
         private Order order;
 
         private void OnMouseUp() {
-            OnOrderCompleted.Raise(order);
+            if (ActiveOrder.Order != order) {
+                handleOrder();
+            } else {
+                completeOrder();
+            }
+        }
 
+        private void completeOrder()
+        {
+            ActiveOrder.ResetOrder();
+
+            OnOrderCompleted.Raise(order);
+            
             order.gameObject.SetActive(false);
+        }
+
+
+        private void handleOrder()
+        {
+            ActiveOrder.SetOrder(order);
+
+            PendingOrders.Remove(order);
+
+            OnActivateOrder.Raise(order);
         }
 
         private void OnEnable()
@@ -35,11 +59,10 @@ namespace Testies.Scripts {
 
         private void OnDisable()
         {
-            PendingOrders.Remove(order);
-
             CompletedOrders.Add(order);
 
         }
+
 
        
 

@@ -17,7 +17,7 @@ public class OrdersObserver : MonoBehaviour
         Text.text = Orders.Count().ToString();
     }
 
-   private void OnEnable()
+    private void OnEnable()
     {
         UpdateText();
     }

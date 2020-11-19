@@ -113,6 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AvailableMeals: {fileID: 11400000, guid: 2747d48fb29283c43831dbec052d5b1d, type: 2}
   PendingOrders: {fileID: 11400000, guid: f0078a5807609f4489e2453a9ff22f50, type: 2}
+  ActiveOrder: {fileID: 11400000, guid: da65f9811cffb744790687963ef7a0c3, type: 2}
   CompletedOrders: {fileID: 11400000, guid: bed9c1d93bbe75d44903d98bdefdb401, type: 2}
+  OnActivateOrder: {fileID: 11400000, guid: 7086390578f403c4da6089a6c42b6bd1, type: 2}
   OnOrderCompleted: {fileID: 11400000, guid: fdcfb2fa451e275448d5a488a6a24fcd, type: 2}
-  OnOrderClick: {fileID: 11400000, guid: 81fbfd2e264aec24d9af815482951b30, type: 2}
