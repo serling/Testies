@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 3158465627729379264}
   - component: {fileID: 7457983429628192256}
   - component: {fileID: 4941805734298127436}
-  - component: {fileID: 9149031562794008820}
+  - component: {fileID: 8819539748987428368}
   m_Layer: 0
-  m_Name: Order
+  m_Name: NewOrder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,12 +94,12 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1943600891128509495}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &9149031562794008820
+--- !u!114 &8819539748987428368
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,9 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f92188409a27bf41b2395beccffebd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AvailableMeals: {fileID: 11400000, guid: 2747d48fb29283c43831dbec052d5b1d, type: 2}
   PendingOrders: {fileID: 11400000, guid: f0078a5807609f4489e2453a9ff22f50, type: 2}
   CompletedOrders: {fileID: 11400000, guid: bed9c1d93bbe75d44903d98bdefdb401, type: 2}
   OnOrderCompleted: {fileID: 11400000, guid: fdcfb2fa451e275448d5a488a6a24fcd, type: 2}
-  onOrderClick: {fileID: 11400000, guid: 81fbfd2e264aec24d9af815482951b30, type: 2}
-  label: Carrot
-  Meal: {fileID: 11400000, guid: 6d24a3d9d1f9947489eff4dfd579cfb0, type: 2}
+  OnOrderClick: {fileID: 11400000, guid: 81fbfd2e264aec24d9af815482951b30, type: 2}

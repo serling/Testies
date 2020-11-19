@@ -7,7 +7,7 @@ namespace Testies.Events
 {
     public class OrderEventListener : MonoBehaviour
     {
-         public OrderEvent Event;
+        public OrderEvent Event;
 
         public OrderUnityEvent Response;
 

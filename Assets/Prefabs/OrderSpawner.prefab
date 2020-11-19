@@ -11,9 +11,6 @@ GameObject:
   - component: {fileID: 8848901529324839998}
   - component: {fileID: 8848901529324839999}
   - component: {fileID: 8848901529324839996}
-  - component: {fileID: 191749331}
-  - component: {fileID: 191749335}
-  - component: {fileID: 1193277472}
   m_Layer: 0
   m_Name: OrderSpawner
   m_TagString: Untagged
@@ -48,7 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PendingOrders: {fileID: 11400000, guid: f0078a5807609f4489e2453a9ff22f50, type: 2}
-  AvailableMeals: {fileID: 11400000, guid: 2747d48fb29283c43831dbec052d5b1d, type: 2}
   OrderPrefab: {fileID: 1943600891128509495, guid: d32e46fea095e334a9472a0362afad28,
     type: 3}
 --- !u!114 &8848901529324839996
@@ -70,76 +66,6 @@ MonoBehaviour:
       - m_Target: {fileID: 8848901529324839999}
         m_MethodName: AddOrder
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &191749331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8848901529324839994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa7c4559d5dfd6840bf55618659b52f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 40b8c378845d9034e9c854d4aba4e49c, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &191749335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8848901529324839994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b68be93901d727a48b3cc55bf3357811, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: fbfd550a1261b614da16908e561f891b, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8848901529324839999}
-        m_MethodName: RemoveOrder
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1193277472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8848901529324839994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa7c4559d5dfd6840bf55618659b52f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 81fbfd2e264aec24d9af815482951b30, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8848901529324839999}
-        m_MethodName: PrintOrder
-        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

@@ -9,6 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16c846564cda61546910bccc50003f3a, type: 3}
-  m_Name: OnMouseClick
+  m_Script: {fileID: 11500000, guid: 94f2026ff7a58ce47a379abe726c32aa, type: 3}
+  m_Name: FirstOrder
   m_EditorClassIdentifier: 
+  Label: fffffffffffffffff

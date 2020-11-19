@@ -2,24 +2,42 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Testies.Sets;
+using Testies.Models;
 
 namespace Testies.Scripts
 {
     public class OrderManager : MonoBehaviour
     {
+        public OrderRuntimeSet PendingOrders;
 
-        public void LogCompletedOrder()
+        public void LogOrder(Order order)
         {
-            Debug.Log("Completed Order!");
+            Debug.Log("Order label: " + order.Label);
         }
 
-        private void Start()
+        public void CompleteOrder(Order order)
         {
+            Debug.Log("Order completed: " + order.Label);
             
+            // order.gameObject.SetActive(false);
         }
 
-        private void Update()
+        public void RemoveOrder(Order order)
         {
+            Debug.Log("just removing" + order.Label);
+
+            // order.gameObject.SetActive(false);
         }
+
+        public void RemoveRandomOrder()
+        {
+            int length = PendingOrders.Count();
+
+            int index = Random.Range(0, length);
+
+            PendingOrders.Items[index].gameObject.SetActive(false);
+
+        }
+
     }
 }
