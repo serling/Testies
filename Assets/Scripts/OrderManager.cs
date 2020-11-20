@@ -18,19 +18,16 @@ namespace Testies.Scripts
         public void CompleteOrder(Order order)
         {
             Debug.Log("Completing order: " + order.Label);
-            
         }
 
         public void ActivateOrder(Order order)
         {
             Debug.Log("handling order: " + order.Label);
-            
         }
 
         public void RemoveOrder(Order order)
         {
             Debug.Log("Removing order: " + order.Label);
-
         }
 
         public void RemoveRandomOrder()

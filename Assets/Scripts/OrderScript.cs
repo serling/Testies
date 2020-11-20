@@ -31,8 +31,6 @@ namespace Testies.Scripts {
 
         private void completeOrder()
         {
-            ActiveOrder.ResetOrder();
-
             OnOrderCompleted.Raise(order);
             
             order.gameObject.SetActive(false);
